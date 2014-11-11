@@ -19,6 +19,6 @@ public class SmartSquare extends GameSquare
 	{
 		
 			//If this square has a bomb, set the sqaure to show a bomb
-			System.out.println("BANG");
+			System.out.println("thisSquareHasBomb");
 	}
 }
