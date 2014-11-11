@@ -20,7 +20,6 @@ public class SmartSquare extends GameSquare
 		
 			//If this square has a bomb, set the square to show a bomb
 			System.out.println(thisSquareHasBomb);
-			this.setImage("bomb.png");
-			this.update(getGraphics());
+
 	}
 }
