@@ -9,7 +9,7 @@ public class SmartSquare extends GameSquare
 
 	public SmartSquare(int x, int y, GameBoard board)
 	{
-		super(x, y, "images/blank.png", board);
+		super(x, y, "images/bomb.png", board);
 
 		Random r = new Random();
 		thisSquareHasBomb = (r.nextInt(MINE_PROBABILITY) == 0);
@@ -18,7 +18,9 @@ public class SmartSquare extends GameSquare
 	public void clicked()
 	{
 		
-			//If this square has a bomb, set the sqaure to show a bomb
-			System.out.println("thisSquareHasBomb");
+			//If this square has a bomb, set the square to show a bomb
+			System.out.println(thisSquareHasBomb);
+			this.setImage("bomb.png");
+			this.update(getGraphics());
 	}
 }
