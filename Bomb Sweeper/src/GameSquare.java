@@ -41,6 +41,7 @@ public abstract class GameSquare extends JButton
 	public void setImage(String filename)
 	{
 		this.setIcon(new ImageIcon(filename));
+		
 	}
 
 	/**
